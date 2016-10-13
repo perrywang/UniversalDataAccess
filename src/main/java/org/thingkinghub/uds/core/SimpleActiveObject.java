@@ -89,4 +89,8 @@ public class SimpleActiveObject implements ActiveObject, Map<String, Object>{
     public ObjectDescriptor getObjectDescriptor() {
         return objectDescriptor;
     }
+
+    public  void setObjectDescriptor(ObjectDescriptor objectDescriptor) {
+        this.objectDescriptor = objectDescriptor;
+    }
 }

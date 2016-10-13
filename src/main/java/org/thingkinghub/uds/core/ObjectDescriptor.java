@@ -7,6 +7,8 @@ public interface ObjectDescriptor {
     void addField(String name, DataType type);
     
     List<FieldDescriptor> getFields();
+
+    boolean hasField(String name);
     
     Tenant getTentant();
 }

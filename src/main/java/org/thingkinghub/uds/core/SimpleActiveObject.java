@@ -7,19 +7,15 @@ import java.util.Set;
 
 public class SimpleActiveObject implements ActiveObject, Map<String, Object>{
     
-    private Map<String,Object> map;
+    private Map<String,Object> map = new HashMap<String,Object>();
     
     private ObjectDescriptor objectDescriptor;
 
-    public SimpleActiveObject(Map<String,Object> m) {
-        if (m == null) {
-            throw new NullPointerException();
-        }
-        this.map = m;
+    public SimpleActiveObject(ObjectDescriptor objectDescriptor) {
+        this.objectDescriptor = objectDescriptor;
     }
 
     public SimpleActiveObject() {
-        this(new HashMap<String,Object>());
     }
     
     public Object put(String name, Object value) {
@@ -52,7 +48,6 @@ public class SimpleActiveObject implements ActiveObject, Map<String, Object>{
         return map.entrySet();
     }
     
-    @Override
     public Object get(Object key) {
         return map.get(key);
     }

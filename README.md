@@ -1,3 +1,5 @@
 # Universal Data Access Solution
-[Salesforce Reference Architecture](https://developer.salesforce.com/page/Multi_Tenant_Architecture)  
+## Target
+1. easily create/edit schema and no data migration required after schema changed
+2. multi tenant schema support
 
